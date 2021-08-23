@@ -1,0 +1,534 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+  }
+  
+  #navbar {
+    background-color: #fff;
+    padding: 1px 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.192);
+  }
+  
+  .navbar-right {
+    padding: 20px;
+    margin-right: 3%;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    margin: 7px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 650;
+    padding: 10px;
+    transition: 0.4s;
+  }
+  
+  .navbar-right a:hover {
+    color: #8490ff;
+  }
+  
+  nav #logo {
+    padding-left: 3.5%;
+    font-size: 45px;
+  }
+  
+  .navbar a {
+    float: left;
+  }
+  
+  .navbar-right {
+    float: right;
+  }
+  
+  header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url("back.webp") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  
+  .headertext{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    width: 50%;
+    top: 55%;
+    left: 70%;
+    transform: translate(-55%, -70%);
+    color: white;
+  }
+  
+  .box .fa{
+    font-size: 50px;
+    margin-bottom: 14px;
+  }
+  
+  .headertext h1 {
+    font-weight: 10;
+  }
+  
+  header span{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 700;
+  }
+  
+  header button {
+    width: 32%;
+    padding: 12px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 4%;
+    color: white;
+    background-color: #7f53ac;
+    background-image: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  header button:hover {
+    background-color: #8053ac00;
+    background-image: -webkit-linear-gradient(0deg, #00000000 0%, #00000000 100%);
+    border: 1px solid white;
+  }
+  
+  .services {
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .textmain {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    justify-items: center;
+  }
+  .text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 70px;
+  }
+  .text h1,
+  .textmain h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .text p,
+  .textmain p {
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    margin-bottom: 10px;
+    padding: 0 23%;
+  }
+  
+  .box {
+    width: 100%;
+    display: flex;
+    padding: 0% 4%;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    text-align: left;
+    padding: 0 15px;
+    transition: all .5s;
+  }
+  
+  .box1:hover,
+  .box2:hover,
+  .box3:hover,
+  .box4:hover {
+    transition: 0.2s;
+    color: #7f53ac;
+  }
+  
+  .box1 h4,
+  .box2 h4,
+  .box3 h4,
+  .box4 h4 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .box1 p,
+  .box2 p,
+  .box3 p,
+  .box4 p {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .box1 button,
+  .box2 button,
+  .box3 button,
+  .box4 button {
+    cursor: pointer;
+    border: 1px solid #f4f4f4;
+    padding: 12px 35px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    color: white;
+    transition: 0.2s;
+    background-color: #7f53ac;
+    background-image: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+  }
+  
+  /* sliders */
+  .sliders {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    color: #777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: relative;
+  }
+  .con {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .cmain {
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+  }
+  .context {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  .ctext h1 {
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+  .ctext p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+  .sid {
+    margin-top: 40px;
+    border-radius: 5pxqa;
+  }
+  /* About Creative Agency Team */
+  
+  .photos {
+    padding: 13% 0%;
+  }
+  
+  .photos p {
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 7%;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+  }
+  
+  .imeg {
+    width: 30%;
+    height: auto;
+  }
+
+  .i1{
+
+  }
+  
+  .i {
+    position: relative;
+    text-align: center;
+  }
+
+  .i1:hover .i{
+      transform: scale(1.2);
+  }
+  
+  .i h3 {
+    font-size: 22px;
+    margin-top: 6%;
+    color: black;
+  }
+  .i p {
+    margin-top: 1.5%;
+    color: #777777;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35%;
+    right: 0;
+    width: 30%;
+    height: auto;
+    transition: 0.5s ease;
+    opacity: 0;
+    background-color: #8490ff;
+  }
+  
+  .symbols {
+      color: #ffffff;
+      font-size: 12px;
+      font-family: sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .symbols a {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+  }
+  
+  .i:hover .symbols {
+    opacity: 1;
+  }
+  
+  .i:hover .overlay {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  footer {
+    padding-top: 100px;
+    margin-top: 15%;
+    background: #222;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  footer h4 {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .newsletter p {
+    margin-top: 5%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  
+  .down p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  li {
+    list-style: none;
+    line-height: 35px;
+    font-weight: 100;
+  }
+  
+  li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 350;
+  }
+  
+  li a:hover {
+    transition: 0.4s;
+    color: #8490ff;
+  }
+  
+  .footclass {
+    padding: 0.3% 7% 0% 5%;
+  }
+  
+  .products {
+    float: left;
+  }
+  
+  .newsletter {
+    float: left;
+    margin-left: 14%;
+    width: 50%;
+  }
+  
+  .feed {
+    float: right;
+  }
+  
+  .down {
+    margin-top: 15%;
+    padding: 5% 7% 0% 5%;
+  }
+  
+  .copy {
+    float: left;
+  }
+  
+  .copy a {
+    text-decoration: none;
+  }
+  
+  .copy .fa,
+  .blue {
+    color: #8490ff;
+  }
+  
+  .social {
+    float: right;
+  }
+  
+  input {
+    margin-top: 4%;
+    padding: 14px 22px;
+    border-radius: 35px;
+    width: 60%;
+    border: none;
+    background: #fff;
+    color: #777;
+  }
+  
+  .button {
+    width: 32%;
+    padding: 12px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 4%;
+    color: white;
+    background-color: #7f53ac;
+    background-image: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .arr {
+    transition: all 0.5s;
+    margin: 10px;
+  }
+  
+  .button:hover {
+    width: 34%;
+  }
+  
+  .button:hover span {
+    transition: 0.5s;
+    padding: 10px;
+  }
+  
+  .fa-heart {
+    background-color: white;
+  }
+  
+  .social .fa {
+    color: white;
+    background-color: #121212;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    padding: 10px;
+  }
+  
+  .social .fa:hover {
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  }
+  
+  .social .fa-facebook {
+    padding: 10px 14px;
+  }
+  
+  footer img {
+    padding: 2px;
+  }
+
+  .parent {
+    width: 400px; 
+    height: 300px;
+  }
+  
+  .child {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-image: url("images/city.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.child::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.75);
+  }
+  
+  .parent:hover .child:before,
+  .parent:focus .child:before {
+    display: block;
+  }
+
+  span {
+    color: white; /* Good thing we set a fallback color! */
+    font-family: sans-serif;
+    padding: 25%;
+    position: absolute;
+  }

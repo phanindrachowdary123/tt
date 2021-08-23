@@ -1,0 +1,136 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+.img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat ;
+    z-index: 100;
+}
+.icons{
+    position:absolute;
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+}
+
+li a{
+
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+ul{
+    padding-right: 4%;
+}
+li{
+    text-align: center;
+    padding:1% 1%;
+    display:inline-block;
+    cursor: pointer;
+    
+}
+
+li:hover{
+    background-color: transparent;    
+}
+li a:hover{   
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------- */
+.left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: aquamarine;
+    
+}
+.inner1{
+    
+}
+/* circle */
+.c1{
+    background-color:#F5FDB0;
+    width: 70px;
+    height: 70px;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 50%;
+}
+
+.right{
+
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+.inner2{
+    margin: 100px 100px 0px 100px;
+    width: auto;
+    height: 100px;
+    padding: 120px;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat ;
+    border-radius: 50%;
+}
+.text{
+    margin-top: 30px;
+    margin-left: 60px;
+    color: white;
+    line-height: 22px;
+}
+
+.c2{
+    background-color: #F5FDB0;
+    width: 70px;
+    height: 70px;
+    margin-top: 220px;
+    margin-left: 250px;
+    border-radius: 50%;
+}
+
+.par{
+    font-size:35px ;
+}
+
+
+
+
+
+
+.social-icons a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(212, 121, 136);
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+.social-icons{
+    margin-left: 50px;
+    display: flex;
+}
+
+.social-icons i{
+    color: #000000;
+}
+.social-icons a:hover{
+    box-shadow: 0px 0px 5px 2px blue;
+    transition: all ease 0.5s;
+}
+.social-icons a:hover i{
+    color: whitesmoke;
+    transition: all ease 0.5s;
+}
